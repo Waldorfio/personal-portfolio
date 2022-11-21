@@ -16,6 +16,20 @@ function App() {
         </div>
       </div>
 
+      <div id='about-page'>
+        About
+      </div>
+
+      <div id='project-page'>
+        Projects
+      </div>
+
+      <div id="footer">
+          <span id='footer-title'>Copyright © 2022 Waldorfio&nbsp;&nbsp;&nbsp;
+            <a href="https://www.github.com/waldorfio" id='github-logo' className="fa fa-github"></a>
+          </span>
+      </div>
+
     </div>
   );
 }
