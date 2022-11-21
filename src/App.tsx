@@ -7,9 +7,13 @@ function App() {
 
 
 
-
+      <div className="bg"></div>
+      <div className="bg bg2"></div>
+      <div className="bg bg3"></div>
 
       <div id='landing-page'>
+
+
         <h1>
           Hello, I'm <span className='name'>Wally</span><br></br>
           I'm a full stack web developer.
