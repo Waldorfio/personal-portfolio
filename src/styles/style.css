@@ -1,0 +1,58 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+    font-family: montserrat, sans-serif;
+    user-select: none;   /* Disables text highlighting. Individually removed later for to-do items */
+}
+body,html {
+    margin: 0;
+    padding: 0;
+}
+a:-webkit-any-link {    /* Removes default styling for links, and React Links */
+    text-decoration: none;
+    color: inherit;
+}
+/*-----------------*/
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+#landing-page {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.name {
+    color: #ff4d5a;
+}
+h1 {
+    font-weight: 300;
+}
+#view-work { /* View my work button */
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 5px 20px 5px 20px;
+}
+#view-work:hover {
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 1.6s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 77, 90, 0.7);
+	}
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 15px rgba(255, 77, 90, 0);
+	}
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 77, 90, 0);
+	}
+}
