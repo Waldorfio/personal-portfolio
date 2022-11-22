@@ -1,5 +1,5 @@
 My fully responsive personal portfolio, built using React, TypeScript and vanilla CSS.
-## [Live Link 👈]()
+## [Live Link 👈](https://personal-portfolio-phi-pearl.vercel.app/)
 
 ### Features
 - A showcase of my personal projects
@@ -14,7 +14,7 @@ My fully responsive personal portfolio, built using React, TypeScript and vanill
 - Advanced CSS animations
 
 ## How to run the app
-### 1. Click the [hosted link]()
+### 1. Click the [hosted link](https://personal-portfolio-phi-pearl.vercel.app/)
 
 OR
 
