@@ -100,14 +100,43 @@ h1 {
 	}
 }
 
+/* SWITCH */
+.switch input {
+    position: absolute;
+    opacity: 0;
+}
+.switch {
+    display: inline-block;
+    font-size: 20px;
+    height: 1em;
+    width: 2em;
+    background: #BDB9A6;
+    border-radius: 1em;
+}
+.switch div {
+    height: 1em;
+    width: 1em;
+    border-radius: 1em;
+    background: #FFF;
+    box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+    transition: all 300ms;
+}
+.switch input:checked + div {
+    transform: translate3d(100%, 0, 0);
+}
+.switch input:checked + #nav-bar {
+    color: red;
+}
 /* NAV BAR */
 #nav-bar {
+    z-index: 1;
     list-style-type: none; /* Disable ul dots */
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: 1fr repeat(4, 100px);
     justify-items: center;
     justify-content: end;
     padding: 15px;
+    margin: 0;
     background-color: #262626;
     position: sticky;
     top: 0;
@@ -119,18 +148,111 @@ h1 {
 .nav-links:hover {
     color: #ff4d5a;
 }
-
+.switch {
+    justify-self: start;
+}
 
 /* ABOUT PAGE */
 #about-page {
+    display: grid;
+    gap: 20px;
     height: 900px;
+    padding: 50px;
 }
+#about-info {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto;
+}
+#intro1 {
+    font-weight: 600;
+}
+#tech-stack {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(auto-fit, 100px);
+}
+#tech-stack > div {
+    display: grid;
+    grid-template-rows: 1.2fr 0.4fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
 
+    font-family: Helvetica, sans-serif;
+    font-size: 10.4px;
+    line-height: 13.52px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px dotted white;
+    border-radius: 2px;
+
+    padding: 15px;
+
+    transition: background-color 0.2s;
+}
+#tech-stack > div:hover {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+i {
+    font-size: 50px; /* Size of devicon icons */
+}
 
 /* PROJECTS PAGE */
 #project-page {
     height: 1900px;
+    padding: 50px;
 }
+.project-desc {
+}
+.para3 {
+    border-top: solid 1px grey;
+    padding-top: 20px;
+}
+/* .project-btn {
+    width: 150px;
+    color: #0ebf83;
+    border: 2px solid #0ebf83;
+    border-radius: 2px;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+} */
+
+
+
+.project-btn {
+    width: 150px;
+    color: #0ebf83;
+    border: 2px solid #0ebf83;
+    border-radius: 2px;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+    transform: perspective(1px) translateZ(0);
+    transition: color 0.5s;
+}
+  .project-btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0ebf83;
+    transform: scaleY(0);
+    transform-origin: 50% 100%;
+    transition: transform 0.5s ease-out;
+  }
+  .project-btn:hover, .project-btn:focus, .project-btn:active {
+    color: white
+  }
+  .project-btn:hover:before, .project-btn:focus:before, .project-btn:active:before {
+    transform: scaleY(1);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
 
 /* FOOTER */
 #footer {
