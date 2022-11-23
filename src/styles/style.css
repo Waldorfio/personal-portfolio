@@ -275,6 +275,18 @@ i {
 #linked-logo:hover {color: #0072b1}
 
 /* MEDIA QUERIES */
-@media (min-width: 1000px) { /* 100px -> */
+@media (min-width: 0px) and (max-width: 1000px) { /*0px -> 1000px */
+    #landing-page {font-size: 1.2em}
+    #about-page {font-size: 1em}
+    #footer {font-size: 0.6em}
+}
+@media (min-width: 1000px) and (max-width: 1400px) { /* 1000px -> 1400px */
     #landing-page {font-size: 1.8em}
+    #about-page {font-size: 1.1em}
+    #footer {font-size: 1em}
+}
+@media (min-width: 1400px) and (max-width: 4000px) { /* 1400px -> 1600px */
+    #landing-page {font-size: 2em}
+    #about-page {font-size: 1.4em}
+    #footer {font-size: 1.2em}
 }
