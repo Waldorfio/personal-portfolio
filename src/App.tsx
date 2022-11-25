@@ -65,13 +65,28 @@ function App() {
         <div id='project-page'>
           <h2>Projects</h2>
           <div className="projects">
+            <div className='project-title'>SPA E-Commerce site built using React</div>
             <div className="project-imgs"></div>
             <div className="project-desc">
                 <p className="para1">
-                    Para1
+                    Shopping cart is a fully responsive, single-page application 
+                    built using React, TypeScript, and styled using vanilla CSS.
+                    The goal here was to showcase routing in React, whilst further 
+                    refining my CSS skills. 
                 </p>
                 <p className="para2">
-                    Para2
+                    I struggled with a few things whislt building this app. Firstly, 
+                    maintaining strict typing with TypeScript was  something new 
+                    to me here, so took some time to get comfortable with.
+                    <br></br>
+                    Next, another practice that I had struggled with was the passing 
+                    of states via Outlet routes in TypeScript. Thankfully, the 
+                    problem was solved by maintaining strict typing across the app, 
+                    specifically with props that were passed through components.
+                    <br></br>
+                    The goal was to also advance my CSS skills further, and so I 
+                    practiced creating components animated such as the sliding cart 
+                    as well as the smooth responsive scaling across devices.
                 </p>
                 <p className="para3">
                     Built using React, Typescript and CSS
