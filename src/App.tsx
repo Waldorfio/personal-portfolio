@@ -1,8 +1,42 @@
-import React from 'react';
-import './styles/style.css'
-import Footer from './components/Footer'
+import React, { useState } from 'react';
+import './styles/style.css';
+import NavBar from './components/NavBar';
+import TechStack from './components/TechStack';
+import Project from './components/Project';
+import Footer from './components/Footer';
 
 function App() {
+  // State Declarations
+  const [projects, setProject] = useState(
+    [
+      {
+        title: 'E-Commerce SPA Website built using React',
+        para1: 'para1 test', 
+        para2: 'para2 test',
+        para3: 'Built using React, TypeScript and CSS',
+        liveLink: '',
+        gitLink: '',
+      },
+      {
+        title: 'E-Commerce SPA Website built using React',
+        para1: 'para1 test', 
+        para2: 'para2 test',
+        para3: 'Built using React, TypeScript and CSS',
+        liveLink: '',
+        gitLink: '',
+      },
+      {
+        title: 'E-Commerce SPA Website built using React',
+        para1: 'para1 test', 
+        para2: 'para2 test',
+        para3: 'Built using React, TypeScript and CSS',
+        liveLink: '',
+        gitLink: '',
+      },
+    ]
+  );
+
+  // Render
   return (
     <div>
 
@@ -10,13 +44,7 @@ function App() {
         <div className="bg bg2"></div>
         <div className="bg bg3"></div>
   
-        <ul id='nav-bar'>
-            <label className="switch"><input type="checkbox" /><div></div></label>
-            <li className='nav-links'>Home</li>
-            <li className='nav-links'>About</li>
-            <li className='nav-links'>Projects</li>
-            <li className='nav-links'>Contact</li>
-        </ul>
+        < NavBar />
 
         <div id='landing-page'>
   
@@ -46,26 +74,25 @@ function App() {
                     passion for TypeScript, React, and Node/Express.
                 </span>
             </div>
-            <div id="tech-stack">
-                <div><i className="devicon-html5-plain colored"></i><span>HTML</span></div>
-                <div><i className="devicon-css3-plain colored"></i><span>CSS</span></div>
-                <div><i className="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-                <div><i className="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
-                <div><i className="devicon-react-plain colored"></i><span>React</span></div>
-                <div><i className="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
-                <div><i className="devicon-express-original"></i><span>Express</span></div>
-                <div><i className="devicon-nodejs-plain colored"></i><span>NodeJS</span></div>
-                <div><i className="devicon-python-plain colored"></i><span>Python</span></div>
-                <div><i className="devicon-jest-plain colored"></i><span>Jest</span></div>
-                <div><i className="devicon-git-plain colored"></i><span>Git</span></div>
-                <div><i className="devicon-webpack-plain colored"></i><span>Webpack</span></div>
-                <div><i className="devicon-npm-original-wordmark colored"></i><span>npm</span></div>
-            </div>
+            < TechStack />
         </div>
   
         <div id='project-page'>
           <h2>Projects</h2>
-          <div className="projects">
+
+          { projects.map((elem, idx) => (
+            < Project
+              title = {elem.title}
+              para1 = {elem.para1}
+              para2 = {elem.para2}
+              para3 = {elem.para3}
+              liveLink = {elem.liveLink}
+              gitLink = {elem.gitLink}
+              key = {idx}
+            />
+          ))}
+
+          {/* <div className="projects">
             <div className='project-title'>SPA E-Commerce site built using React</div>
             <div className="project-imgs"></div>
             <div className="project-desc">
@@ -95,55 +122,8 @@ function App() {
                 <div className="project-btn">Live App</div>
                 <div className="project-btn">GitHub Repo</div>
             </div>
-          </div>
-          <div className="projects">
-            <div className="project-imgs"></div>
-            <div className="project-desc">
-                <p className="para1">
-                    Para1
-                </p>
-                <p className="para2">
-                    Para2
-                </p>
-                <p className="para3">
-                    Built using React, Typescript and CSS
-                </p>
-                <div className="project-btn">Live App</div>
-                <div className="project-btn">GitHub Repo</div>
-            </div>
-          </div>
-          <div className="projects">
-            <div className="project-imgs"></div>
-            <div className="project-desc">
-                <p className="para1">
-                    Para1
-                </p>
-                <p className="para2">
-                    Para2
-                </p>
-                <p className="para3">
-                    Built using React, Typescript and CSS
-                </p>
-                <div className="project-btn">Live App</div>
-                <div className="project-btn">GitHub Repo</div>
-            </div>
-          </div>
-          <div className="projects">
-            <div className="project-imgs"></div>
-            <div className="project-desc">
-                <p className="para1">
-                    Para1
-                </p>
-                <p className="para2">
-                    Para2
-                </p>
-                <p className="para3">
-                    Built using React, Typescript and CSS
-                </p>
-                <div className="project-btn">Live App</div>
-                <div className="project-btn">GitHub Repo</div>
-            </div>
-          </div>
+          </div> */}
+
         </div>
   
         < Footer />
