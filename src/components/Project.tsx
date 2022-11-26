@@ -19,8 +19,8 @@ const Project = (props: Props) => {
                 <p className="para1">{para1}</p>
                 <p className="para2">{para2}</p>
                 <p className="para3">{para3}</p>
-                <div className="project-btn">Live App</div>
-                <div className="project-btn">GitHub Repo</div>
+                <div className="project-btn"><a href={liveLink}>Live App</a></div>
+                <div className="project-btn"><a href={gitLink}>GitHub Repo</a></div>
             </div>
         </div>
     );
