@@ -3,6 +3,10 @@ My fully responsive personal portfolio, built using React, TypeScript and vanill
 
 ### Features
 - A showcase of my personal projects
+- Smooth and responsive design
+- Dark/light mode switch
+- Animated project gifs
+- Animated tech stack icons
 
 ![](screencap1.png)
 
