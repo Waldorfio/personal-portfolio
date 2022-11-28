@@ -6,16 +6,24 @@ import Project from './components/Project';
 import Footer from './components/Footer';
 
 function App() {
-  // Handlers
-  const homeRef = useRef(null);
-  const aboutRef = useRef(null);
-  const projectRef = useRef(null);
-  const contactRef = useRef(null);
+  // Declaring Refs for DOM Manipulation
+  const homeRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const projectRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
 
-  const scrollHome = () => homeRef.current.scrollIntoView()
-  const scrollAbout = () => aboutRef.current.scrollIntoView()
-  const scrollProject = () => projectRef.current.scrollIntoView()
-  const scrollContact = () => contactRef.current.scrollIntoView()
+  const scrollHome = () => {
+    if (homeRef.current?.focus()) {homeRef.current.scrollIntoView()} // Check if homeRef.current is null before scrolling into view
+  }
+  const scrollAbout = () => {
+    if (aboutRef.current?.focus()) {aboutRef.current.scrollIntoView()} // Check if aboutRef.current is null before scrolling into view
+  }
+  const scrollProject = () => {
+    if (projectRef.current?.focus()) {projectRef.current.scrollIntoView()} // Check if projectRef.current is null before scrolling into view
+  }
+  const scrollContact = () => {
+    if (contactRef.current?.focus()) {contactRef.current.scrollIntoView()} // Check if contactRef.current is null before scrolling into view
+  }
 
   // State Declarations
   const [projects, setProject] = useState(
