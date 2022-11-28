@@ -12,20 +12,37 @@ function App() {
   const projectRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
+  // Perform the DOM Manipulations
   const scrollHome = () => {
-    if (homeRef.current?.focus()) {homeRef.current.scrollIntoView()} // Check if homeRef.current is null before scrolling into view
+    if (homeRef.current?.scrollIntoView()) {homeRef.current.scrollIntoView()} // Check if homeRef.current is null before scrolling into view
   }
   const scrollAbout = () => {
-    if (aboutRef.current?.focus()) {aboutRef.current.scrollIntoView()} // Check if aboutRef.current is null before scrolling into view
+    if (aboutRef.current?.scrollIntoView()) {aboutRef.current.scrollIntoView()} // Check if aboutRef.current is null before scrolling into view
   }
   const scrollProject = () => {
-    if (projectRef.current?.focus()) {projectRef.current.scrollIntoView()} // Check if projectRef.current is null before scrolling into view
+    if (projectRef.current?.scrollIntoView()) {projectRef.current.scrollIntoView()} // Check if projectRef.current is null before scrolling into view
   }
   const scrollContact = () => {
-    if (contactRef.current?.focus()) {contactRef.current.scrollIntoView()} // Check if contactRef.current is null before scrolling into view
+    if (contactRef.current?.scrollIntoView()) {contactRef.current.scrollIntoView()} // Check if contactRef.current is null before scrolling into view
   }
 
-  // State Declarations
+  // State Declarations & Hanlders
+  const [isChecked, setIsChecked] = useState(false);
+  const handleCheck = (event: any) => {
+    if (event.target.checked) {
+      console.log('Light Mode Enabled');
+      document.documentElement.style.setProperty('--text', 'black');
+      document.documentElement.style.setProperty('--bgColor1', '#ffffff');
+      document.documentElement.style.setProperty('--bgColor2', '#acacac');
+    } else {
+      console.log('Dark Mode Enabled');
+      document.documentElement.style.setProperty('--text', 'white');
+      document.documentElement.style.setProperty('--bgColor1', '#1a1a1a');
+      document.documentElement.style.setProperty('--bgColor2', '#282828');
+    }
+    setIsChecked(current => !current);
+  };
+
   const [projects, setProject] = useState(
     [
       {
@@ -76,6 +93,8 @@ function App() {
           scrollAbout = {scrollAbout}
           scrollProject = {scrollProject}
           scrollContact = {scrollContact}
+          isChecked = {isChecked}
+          handleCheck = {handleCheck}
         />
 
         <div id='landing-page' ref={homeRef}>

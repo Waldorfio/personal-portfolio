@@ -13,9 +13,15 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     color: inherit;
 }
 /*-----------------*/
+:root { /* Defining dark mode variables */
+    --text: white;
+    --bgColor1: #1a1a1a;
+    --bgColor2: #282828;
+}
+
 body {
-    background-color: #1a1a1a;
-    color: white;
+    background-color: var(--bgColor1);
+    color: var(--text);
 }
 html { /* For smooth scrolling to sections */
     scroll-behavior: smooth;
@@ -24,7 +30,7 @@ html { /* For smooth scrolling to sections */
 /* BACKGROUND ANIMATION */
 .bg {
     animation: slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #1a1a1a 50%, #282828 50%);
+    background-image: linear-gradient(-60deg, var(--bgColor1) 50%, var(--bgColor2) 50%);
     bottom: 0;
     left: -50%;
     opacity: .5;
