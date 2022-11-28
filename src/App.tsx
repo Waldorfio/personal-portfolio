@@ -34,11 +34,13 @@ function App() {
       document.documentElement.style.setProperty('--text', 'black');
       document.documentElement.style.setProperty('--bgColor1', '#ffffff');
       document.documentElement.style.setProperty('--bgColor2', '#acacac');
+      document.documentElement.style.setProperty('--navBar', '#cccccc');
     } else {
       console.log('Dark Mode Enabled');
       document.documentElement.style.setProperty('--text', 'white');
       document.documentElement.style.setProperty('--bgColor1', '#1a1a1a');
       document.documentElement.style.setProperty('--bgColor2', '#282828');
+      document.documentElement.style.setProperty('--navBar', '#262626');
     }
     setIsChecked(current => !current);
   };

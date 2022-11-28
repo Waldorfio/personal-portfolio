@@ -17,6 +17,7 @@ a:-webkit-any-link {    /* Removes default styling for links, and React Links */
     --text: white;
     --bgColor1: #1a1a1a;
     --bgColor2: #282828;
+    --navBar: #262626;
 }
 
 body {
@@ -146,7 +147,7 @@ h1 {
     justify-content: end;
     padding: 15px;
     margin: 0;
-    background-color: #262626;
+    background-color: var(--navBar);
     position: sticky;
     top: 0;
 }
