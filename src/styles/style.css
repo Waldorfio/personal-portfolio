@@ -17,6 +17,9 @@ body {
     background-color: #1a1a1a;
     color: white;
 }
+html { /* For smooth scrolling to sections */
+    scroll-behavior: smooth;
+}
 
 /* BACKGROUND ANIMATION */
 .bg {

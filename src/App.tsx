@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './styles/style.css';
 import NavBar from './components/NavBar';
 import TechStack from './components/TechStack';
@@ -6,6 +6,17 @@ import Project from './components/Project';
 import Footer from './components/Footer';
 
 function App() {
+  // Handlers
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollHome = () => homeRef.current.scrollIntoView()
+  const scrollAbout = () => aboutRef.current.scrollIntoView()
+  const scrollProject = () => projectRef.current.scrollIntoView()
+  const scrollContact = () => contactRef.current.scrollIntoView()
+
   // State Declarations
   const [projects, setProject] = useState(
     [
@@ -14,24 +25,32 @@ function App() {
         para1: 'para1 test', 
         para2: 'para2 test',
         para3: 'Built using React, TypeScript and CSS',
-        liveLink: '',
-        gitLink: '',
+        liveLink: 'https://shopping-cart-blush-three.vercel.app/',
+        gitLink: 'https://github.com/Waldorfio/shopping-cart#readme',
       },
       {
-        title: 'E-Commerce SPA Website built using React',
+        title: 'Memory Card',
         para1: 'para1 test', 
         para2: 'para2 test',
-        para3: 'Built using React, TypeScript and CSS',
-        liveLink: '',
-        gitLink: '',
+        para3: 'Built using React and CSS',
+        liveLink: 'https://waldorfio.github.io/memory-card/',
+        gitLink: 'https://github.com/Waldorfio/memory-card#readme',
       },
       {
-        title: 'E-Commerce SPA Website built using React',
+        title: 'Battleship Game',
         para1: 'para1 test', 
         para2: 'para2 test',
-        para3: 'Built using React, TypeScript and CSS',
-        liveLink: '',
-        gitLink: '',
+        para3: 'Built using JavaScript, Jest and CSS',
+        liveLink: 'https://waldorfio.github.io/battleship-project/',
+        gitLink: 'https://github.com/Waldorfio/battleship-project#readme',
+      },
+      {
+        title: 'CV Builder',
+        para1: 'para1 test', 
+        para2: 'para2 test',
+        para3: 'Built using React and CSS',
+        liveLink: 'https://waldorfio.github.io/cv-application/',
+        gitLink: 'https://github.com/Waldorfio/cv-application#readme',
       },
     ]
   );
@@ -44,9 +63,14 @@ function App() {
         <div className="bg bg2"></div>
         <div className="bg bg3"></div>
   
-        < NavBar />
+        < NavBar
+          scrollHome = {scrollHome}
+          scrollAbout = {scrollAbout}
+          scrollProject = {scrollProject}
+          scrollContact = {scrollContact}
+        />
 
-        <div id='landing-page'>
+        <div id='landing-page' ref={homeRef}>
   
   
           <h1>
@@ -58,7 +82,7 @@ function App() {
           </div>
         </div>
   
-        <div id='about-page'>
+        <div id='about-page' ref={aboutRef}>
             <h2>About</h2>
             <div id="about-info">
                 <span id="intro1">
@@ -77,7 +101,7 @@ function App() {
             < TechStack />
         </div>
   
-        <div id='project-page'>
+        <div id='project-page' ref={projectRef}>
           <h2>Projects</h2>
 
           { projects.map((elem, idx) => (
@@ -124,6 +148,10 @@ function App() {
             </div>
           </div> */}
 
+        </div>
+
+        <div id='about' ref={contactRef}>
+          Contact
         </div>
   
         < Footer />
