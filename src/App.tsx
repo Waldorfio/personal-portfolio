@@ -106,7 +106,7 @@ function App() {
             Hello, I'm <span className='name'>Wally</span><br></br>
             I'm a full stack web developer.
           </h1>
-          <div id='view-work' className='name'>
+          <div id='view-work' className='name' onClick={scrollProject}>
             View my work
           </div>
         </div>
