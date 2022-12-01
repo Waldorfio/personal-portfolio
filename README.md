@@ -32,7 +32,7 @@ OR
 1. Scroll through the SPA and view my portfolio!
 
 ## Future Features
-- 
+- Fix any typing in TypeScript
 
 ## Dependencies
 - React
