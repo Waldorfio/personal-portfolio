@@ -48,33 +48,33 @@ function App() {
   const [projects, setProject] = useState(
     [
       {
-        title: 'E-Commerce SPA Website built using React',
-        para1: 'para1 test', 
-        para2: 'para2 test',
+        title: 'E-Commerce SPA built using React',
+        para1: 'A fully dynamic and responsive e-commerce website built using React.', 
+        para2: 'Built with routing, and responsiveness across all devices.',
         para3: 'Built using React, TypeScript and CSS',
         liveLink: 'https://shopping-cart-blush-three.vercel.app/',
         gitLink: 'https://github.com/Waldorfio/shopping-cart#readme',
       },
       {
         title: 'Memory Card',
-        para1: 'para1 test', 
-        para2: 'para2 test',
+        para1: 'A memory card game with state management, inspired by Overwatch characters.', 
+        para2: 'Built to test my understanding of ye olde class-based components.',
         para3: 'Built using React and CSS',
         liveLink: 'https://waldorfio.github.io/memory-card/',
         gitLink: 'https://github.com/Waldorfio/memory-card#readme',
       },
       {
         title: 'Battleship Game',
-        para1: 'para1 test', 
-        para2: 'para2 test',
+        para1: 'A recreation of the classic battleship game built using JavaScript.', 
+        para2: 'Test your skills against the worlds best AI...',
         para3: 'Built using JavaScript, Jest and CSS',
         liveLink: 'https://waldorfio.github.io/battleship-project/',
         gitLink: 'https://github.com/Waldorfio/battleship-project#readme',
       },
       {
         title: 'CV Builder',
-        para1: 'para1 test', 
-        para2: 'para2 test',
+        para1: 'A resume builder built using React.', 
+        para2: 'Built to test my understanding of state management as well as functional components and hooks.',
         para3: 'Built using React and CSS',
         liveLink: 'https://waldorfio.github.io/cv-application/',
         gitLink: 'https://github.com/Waldorfio/cv-application#readme',
@@ -106,10 +106,12 @@ function App() {
             Hello, I'm <span className='name'>Wally</span><br></br>
             I'm a full stack web developer.
           </h1>
-          <div id='view-work' className='name' onClick={scrollProject}>
+          <div id='view-work' className='name' onClick={scrollAbout}>
             View my work
           </div>
         </div>
+
+        <div id='page-break'></div>
   
         <div id='about-page' ref={aboutRef}>
             <h2>About</h2>
