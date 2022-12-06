@@ -1,5 +1,5 @@
 My fully responsive personal portfolio, built using React, TypeScript and vanilla CSS.
-## [Live Link 👈](https://personal-portfolio-phi-pearl.vercel.app/)
+## [whanifi.dev 👈](whanifi.dev)
 
 ### Features
 - A showcase of my personal projects
@@ -15,10 +15,10 @@ My fully responsive personal portfolio, built using React, TypeScript and vanill
 - Showcase projects using a SPA in React and TypeScript
 
 ### Challenges Faced
-- Advanced CSS animations
+- Optimising advanced CSS animations
 
 ## How to run the app
-### 1. Click the [hosted link](https://personal-portfolio-phi-pearl.vercel.app/)
+### 1. Click the [hosted link](whanifi.dev)
 
 OR
 
@@ -32,7 +32,7 @@ OR
 1. Scroll through the SPA and view my portfolio!
 
 ## Future Features
-- Fix any typing in TypeScript
+- Fix 'any' typing in TypeScript
 
 ## Dependencies
 - React
