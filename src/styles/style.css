@@ -162,20 +162,26 @@ h1 {
     justify-self: start;
 }
 
+/* ALL PAGES */
+#about-page, #project-page, #contact-page {
+    font-weight: 900;
+    line-height: 1.5em;
+    margin: 0 71.5px 0 71.5px;
+    padding: 15px;
+}
+h2 {
+    align-self: center;
+    justify-self: center;
+}
+
 /* ABOUT PAGE */
 #about-page {
     display: grid;
     gap: 20px;
-    height: 900px;
-    padding: 50px;
 }
 #about-info {
     display: grid;
-    gap: 20px;
-    grid-template-rows: auto;
-}
-#intro1 {
-    font-weight: 600;
+    text-align: center;
 }
 #tech-stack {
     display: grid;
@@ -213,8 +219,8 @@ i {
 
 /* PROJECTS PAGE */
 #project-page {
+    display: grid;
     height: 1900px;
-    padding: 50px;
 }
 .project-desc {
 }

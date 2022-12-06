@@ -117,14 +117,10 @@ function App() {
             <h2>About</h2>
             <div id="about-info">
                 <span id="intro1">
-                    Hi there! 👋 I'm Wally, a software dev.
-                </span>
-                <span id="intro2">
                     Coming from a background of mechanical engineering, I
                     I was immediately enthralled by the satisfaction in creating new
                     products and experiences in a satisfyingly tangible manner.
-                </span>
-                <span id="intro3">
+                    <br></br>
                     I am committed to the idea of life-long learning, I am a full stack developer with a
                     passion for TypeScript, React, and Node/Express.
                 </span>
@@ -181,8 +177,8 @@ function App() {
 
         </div>
 
-        <div id='about' ref={contactRef}>
-          Contact
+        <div id='contact-page' ref={contactRef}>
+          <h2>Contact</h2>
         </div>
   
         < Footer />
