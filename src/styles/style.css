@@ -170,6 +170,7 @@ h1 {
     padding: 15px;
 }
 h2 {
+    font-size: 2em;
     align-self: center;
     justify-self: center;
 }
@@ -178,6 +179,7 @@ h2 {
 #about-page {
     display: grid;
     gap: 20px;
+    padding-top: 50px;
 }
 #about-info {
     display: grid;
@@ -222,6 +224,10 @@ i {
     display: grid;
     height: 1900px;
 }
+.project-title {
+    font-size: 1.5em;
+    color:aquamarine;
+}
 .project-desc {
 }
 .para3 {
@@ -258,6 +264,11 @@ i {
     transform: scaleY(1);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
+
+/* CONTACTS PAGE */
+#contact-page {
+    display: grid;
+}
 
 /* FOOTER */
 #footer {

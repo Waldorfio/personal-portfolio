@@ -89,15 +89,6 @@ function App() {
         <div className="bg"></div>
         <div className="bg bg2"></div>
         <div className="bg bg3"></div>
-  
-        < NavBar
-          scrollHome = {scrollHome}
-          scrollAbout = {scrollAbout}
-          scrollProject = {scrollProject}
-          scrollContact = {scrollContact}
-          isChecked = {isChecked}
-          handleCheck = {handleCheck}
-        />
 
         <div id='landing-page' ref={homeRef}>
   
@@ -113,6 +104,15 @@ function App() {
 
         <div id='page-break'></div>
   
+        < NavBar
+          scrollHome = {scrollHome}
+          scrollAbout = {scrollAbout}
+          scrollProject = {scrollProject}
+          scrollContact = {scrollContact}
+          isChecked = {isChecked}
+          handleCheck = {handleCheck}
+        />
+
         <div id='about-page' ref={aboutRef}>
             <h2>About</h2>
             <div id="about-info">
