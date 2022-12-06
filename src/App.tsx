@@ -49,6 +49,7 @@ function App() {
     [
       {
         title: 'E-Commerce SPA built using React',
+        img: 'project1.png',
         para1: 'A fully dynamic and responsive e-commerce website built using React.', 
         para2: 'Built with routing, and responsiveness across all devices.',
         para3: 'Built using React, TypeScript and CSS',
@@ -57,6 +58,7 @@ function App() {
       },
       {
         title: 'Memory Card',
+        img: 'project2.png',
         para1: 'A memory card game with state management, inspired by Overwatch characters.', 
         para2: 'Built to test my understanding of ye olde class-based components.',
         para3: 'Built using React and CSS',
@@ -65,6 +67,7 @@ function App() {
       },
       {
         title: 'Battleship Game',
+        img: 'project3.png',
         para1: 'A recreation of the classic battleship game built using JavaScript.', 
         para2: 'Test your skills against the worlds best AI...',
         para3: 'Built using JavaScript, Jest and CSS',
@@ -73,6 +76,7 @@ function App() {
       },
       {
         title: 'CV Builder',
+        img: 'project4.png',
         para1: 'A resume builder built using React.', 
         para2: 'Built to test my understanding of state management as well as functional components and hooks.',
         para3: 'Built using React and CSS',
@@ -134,6 +138,7 @@ function App() {
           { projects.map((elem, idx) => (
             < Project
               title = {elem.title}
+              img = {elem.img}
               para1 = {elem.para1}
               para2 = {elem.para2}
               para3 = {elem.para3}

@@ -228,6 +228,10 @@ i {
     font-size: 1.5em;
     color:aquamarine;
 }
+.project-img {
+    height: 300px;
+    border: 50px solid blue;
+}
 .project-desc {
 }
 .para3 {
