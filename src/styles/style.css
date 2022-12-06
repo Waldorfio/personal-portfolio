@@ -222,7 +222,7 @@ i {
 /* PROJECTS PAGE */
 #project-page {
     display: grid;
-    height: 1900px;
+    gap: 40px;
 }
 .project-title {
     font-size: 1.5em;
