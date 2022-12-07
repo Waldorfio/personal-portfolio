@@ -170,16 +170,16 @@ h1 {
     padding: 15px;
 }
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
     align-self: center;
     justify-self: center;
 }
 
 /* ABOUT PAGE */
+#about-page, #project-page, #contact-page {padding-top: 50px} /* Fixes scroll positioning */
 #about-page {
     display: grid;
     gap: 20px;
-    padding-top: 50px;
 }
 #about-info {
     display: grid;
