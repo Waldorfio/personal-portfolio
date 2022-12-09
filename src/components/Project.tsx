@@ -15,7 +15,9 @@ const Project = (props: Props) => {
     return (
         <div className="projects">
             <div className='project-title'>{title}</div>
-            <img className="project-img" src={require('../img/'+img)}></img>
+            <div className='img-container'>
+                <img className="project-img" src={require('../img/'+img)}></img> 
+            </div>
             <div className="project-desc">
                 <p className="para1">{para1}</p>
                 <p className="para2">{para2}</p>
