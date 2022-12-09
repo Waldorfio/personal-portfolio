@@ -75,6 +75,8 @@ html { /* For smooth scrolling to sections */
     justify-items: center;
     text-align: center;
     height: 100vh;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .name {
@@ -314,7 +316,6 @@ i {
     font-size: 1.1em;
     font-weight: 700;
     text-align: center;
-    padding: 10px;
     align-content: center;
 }
 #github-logo, #linked-logo {
@@ -346,154 +347,83 @@ i {
 }
 @media (min-width: 770px) and (max-width: 8000px) {
     #intro1 {
-        margin-left: 25%;
-        margin-right: 25%;
+        /* margin-left: 25%;
+        margin-right: 25%; */
     }
 }
+
 /* All general media queries */
-@media (min-width: 0px) and (max-width: 440px) {
-    .project-title {font-size: 1.0em}
-    .project-desc, #intro1  {font-size: 0.8em}
-    .project-img {}
-    .img-container {width: 100%}
-    .projects {height: 190px}
-    #project-page {gap: 60px}
-}
-@media (min-width: 440px) and (max-width: 560px) {
-    .project-title {font-size: 1.1em}
-    .project-desc, #intro1  {font-size: 0.8em}
-    .project-img {}
-    .img-container {width: 100%}
-    .projects {height: 256px}
-    #project-page {gap: 70px}
-}
-@media (min-width: 560px) and (max-width: 616px) {
-    .project-title {font-size: 1.1em}
-    .project-desc, #intro1  {font-size: 0.8em}
-    .project-img {}
-    .img-container {width: 100%}
-    .projects {height: 306px}
-    #project-page {gap: 70px}
-}
-@media (min-width: 616px) and (max-width: 700px) {
-    .project-title {font-size: 1.2em}
-    .project-desc, #intro1  {font-size: 0.8em}
-    .project-img {}
-    .img-container {width: 100%}
-    .projects {height: 336px}
-    #project-page {gap: 80px}
-}
-@media (min-width: 700px) and (max-width: 770px) {
-    .project-title {font-size: 1.2em}
-    .project-desc {font-size: 0.8em}
-    .project-img {}
-    .img-container {width: 100%}
-    .projects {height: 378px}
-    #project-page {gap: 80px}
-}
-@media (min-width: 770px) and (max-width: 900px) {
-    .project-title {font-size: 1.4em}
-    .project-desc, #intro1  {font-size: 0.9em}
-    .project-img {}
-    .img-container {width: 100%}
-    .projects {height: 432px}
-    #project-page {gap: 100px}
-}
-@media (min-width: 900px) and (max-width: 972px) {
-    .project-title {font-size: 1.7em}
-    .project-desc, #intro1  {font-size: 0.9em}
-    .project-img {}
-    .img-container {width: 110%}
-    .projects {height: 464px}
-    #project-page {gap: 100px}
-}
-@media (min-width: 972px) and (max-width: 1100px) {
-    .project-title {font-size: 1.7em}
-    .project-desc, #intro1  {font-size: 0.9em}
-    .project-img {}
-    .img-container {width: 120%}
-    .projects {height: 512px}
-    #project-page {gap: 100px}
-}
-@media (min-width: 1100px) and (max-width: 1200px) {
-    .project-title {font-size: 1.7em}
-    .project-desc, #intro1  {font-size: 0.9em}
-    .project-img {}
-    .img-container {width: 120%}
-    .projects {height: 560px}
-    #project-page {gap: 100px}
-}
-@media (min-width: 1200px) and (max-width: 1500px) {
-    .project-title {font-size: 2em}
-    .project-desc, #intro1  {font-size: 1em}
-    .project-img {}
-    .img-container {width: 130%}
-    .projects {height: 641px}
-    #project-page {gap: 120px}
-}
-@media (min-width: 1500px) and (max-width: 1700px) {
-    .project-title {font-size: 2.2em}
-    .project-desc, #intro1  {font-size: 1.15em}
-    .project-img {}
-    .img-container {width: 140%}
-    .projects {height: 700px}
-    #project-page {
-        gap: 140px;
-        margin-left: 110px;
-        margin-right: 110px;
-    }
-}
-@media (min-width: 1700px) and (max-width: 8000px) {
-    .project-title {font-size: 2.2em}
-    .project-desc, #intro1 {font-size: 1.15em}
-    .project-img {}
-    .img-container {width: 140%}
-    .projects {height: 700px}
-    #project-page {
-        gap: 140px;
-        margin-left: 220px;
-        margin-right: 220px
-    }
-}
-/* Navbar specific media queries */
 @media (min-width: 0px) and (max-width: 370px) {
-    #nav-bar {
+    #landing-page {font-size: 1em}
+    #nav-bar, #footer {
         font-size: 0.7em;
         height: 32px;
-        grid-template-columns: 1fr repeat(4, 50px);
     }
+    #nav-bar {grid-template-columns: 1fr repeat(4, 50px)}
+    #project-page {gap: 60px}
+    .projects {height: 190px}
+    .project-title {font-size: 1.0em}
+    .project-desc, #intro1  {font-size: 0.8em}
+    .img-container {width: 100%}
+    .project-img {}
 }
 @media (min-width: 370px) and (max-width: 615px) {
-    #nav-bar {
+    #landing-page {font-size: 1.1em}
+    #nav-bar, #footer {
         font-size: 0.8em;
         height: 38px;
-        grid-template-columns: 1fr repeat(4, 70px);
     }
+    #nav-bar {grid-template-columns: 1fr repeat(4, 70px)}
+    #project-page {gap: 70px}
+    .projects {height: 280px}
+    .project-title {font-size: 1.1em}
+    .project-desc, #intro1  {font-size: 0.8em}
+    .img-container {width: 100%}
+    .project-img {}
 }
 @media (min-width: 615px) and (max-width: 770px) {
-    #nav-bar {
+    #landing-page {font-size: 1.2em}
+    #nav-bar, #footer {
         font-size: 0.9em;
         height: 41px;
-        grid-template-columns: 1fr repeat(4, 80px);
     }
+    #nav-bar {grid-template-columns: 1fr repeat(4, 80px)}
+    #project-page {gap: 80px}
+    .projects {height: 350px}
+    .project-title {font-size: 1.2em}
+    .project-desc, #intro1  {font-size: 0.8em}
+    .img-container {width: 100%}
+    .project-img {}
 }
-@media (min-width: 770px) and (max-width: 1200px) {
-    #nav-bar {
+@media (min-width: 770px) and (max-width: 1500px) {
+    #landing-page {font-size: 1.6em}
+    #nav-bar, #footer {
         font-size: 1em;
         height: 47px;
-        grid-template-columns: 1fr repeat(4, 90px);
     }
-}
-@media (min-width: 1200px) and (max-width: 1500px) {
-    #nav-bar {
-        font-size: 1.1em;
-        height: 54px;
-    }
+    #nav-bar {grid-template-columns: 1fr repeat(4, 90px)}
+    #project-page {gap: 100px}
+    .projects {height: 512px}
+    .project-title {font-size: 1.7em}
+    .project-desc, #intro1  {font-size: 0.9em}
+    .img-container {width: 100%}
+    .project-img {}
 }
 @media (min-width: 1500px) and (max-width: 8000px) {
-    #nav-bar {
+    #landing-page {font-size: 1.9em}
+    #nav-bar, #footer {
         font-size: 1.2em;
         height: 59px;
-        grid-template-columns: 1fr repeat(4, 120px);
     }
+    #nav-bar {grid-template-columns: 1fr repeat(4, 120px)}
+    #project-page {
+        gap: 140px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .projects {height: 700px}
+    .project-title {font-size: 2.2em}
+    .project-desc, #intro1  {font-size: 1.15em}
+    .img-container {width: 140%}
+    .project-img {}
 }
