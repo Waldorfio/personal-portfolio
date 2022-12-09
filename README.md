@@ -1,5 +1,5 @@
 My fully responsive personal portfolio, built using React, TypeScript and vanilla CSS.
-## [whanifi.dev 👈](whanifi.dev)
+## [whanifi.dev 👈](https://www.whanifi.dev)
 
 ### Features
 - A showcase of my personal projects
@@ -18,7 +18,7 @@ My fully responsive personal portfolio, built using React, TypeScript and vanill
 - Optimising advanced CSS animations
 
 ## How to run the app
-### 1. Click the [hosted link](whanifi.dev)
+### 1. Click the [hosted link](https://www.whanifi.dev)
 
 OR
 
