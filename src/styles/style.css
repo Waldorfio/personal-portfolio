@@ -177,6 +177,7 @@ h2 {
     font-size: 2rem;
     align-self: center;
     justify-self: center;
+    text-align: center;
 }
 
 /* ABOUT PAGE */
@@ -322,33 +323,48 @@ i {
 #github-logo:hover {transform: rotate(360deg) scale(2)}
 #linked-logo:hover {color: #0072b1}
 
-/* MEDIA QUERIES */
-@media (min-width: 0px) and (max-width: 1000px) { /*0px -> 1000px */
-    #landing-page {font-size: 1.2em}
-    #about-page {font-size: 1em}
-    #footer {font-size: 0.6em}
+
+
+
+
+/*---- MEDIA QUERIES ----*/
+/* Removing margin for mobile devices */
+@media (min-width: 0px) and (max-width: 770px) {
+    #project-page {margin-left: 0px}
 }
-@media (min-width: 1000px) and (max-width: 1400px) { /* 1000px -> 1400px */
-    #landing-page {font-size: 1.8em}
-    #about-page {font-size: 1.1em}
-    #footer {font-size: 1em}
+/* All general media queries */
+@media (min-width: 0px) and (max-width: 440px) {
+    .project-title {font-size: 1.0em}
+    .project-desc {font-size: 0.6em}
+    .project-img {}
+    .img-container {width: 100%}
+    .projects {height: 190px}
+    #project-page {gap: 60px}
 }
-
-@media (min-width: 1400px) and (max-width: 1700px) { /* 1400px -> onwards */
-    #landing-page {font-size: 2em}
-    #about-page {font-size: 1.4em}
-    #footer {font-size: 1.2em}
+@media (min-width: 440px) and (max-width: 560px) {
+    .project-title {font-size: 1.1em}
+    .project-desc {font-size: 0.7em}
+    .project-img {}
+    .img-container {width: 100%}
+    .projects {height: 256px}
+    #project-page {gap: 70px}
 }
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 560px) and (max-width: 616px) {
+    .project-title {font-size: 1.1em}
+    .project-desc {font-size: 0.7em}
+    .project-img {}
+    .img-container {width: 100%}
+    .projects {height: 306px}
+    #project-page {gap: 70px}
+}
+@media (min-width: 616px) and (max-width: 700px) {
+    .project-title {font-size: 1.2em}
+    .project-desc {font-size: 0.8em}
+    .project-img {}
+    .img-container {width: 100%}
+    .projects {height: 336px}
+    #project-page {gap: 80px}
+}
 @media (min-width: 700px) and (max-width: 770px) {
     .project-title {font-size: 1.2em}
     .project-desc {font-size: 0.8em}
@@ -421,9 +437,7 @@ i {
         margin-right: 220px
     }
 }
-
-
-/* Navbar specific queries */
+/* Navbar specific media queries */
 @media (min-width: 0px) and (max-width: 370px) {
     #nav-bar {
         font-size: 0.7em;

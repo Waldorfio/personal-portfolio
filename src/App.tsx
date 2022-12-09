@@ -132,8 +132,8 @@ function App() {
             < TechStack />
         </div>
   
+        <h2>Projects</h2>
         <div id='project-page' ref={projectRef}>
-          <h2>Projects</h2>
 
           { projects.map((elem, idx) => (
             < Project
