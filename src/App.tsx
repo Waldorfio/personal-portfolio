@@ -124,7 +124,6 @@ function App() {
                     Coming from a background of mechanical engineering, I
                     I was immediately enthralled by the satisfaction in creating new
                     products and experiences in a satisfyingly tangible manner.
-                    <br></br>
                     I am committed to the idea of life-long learning, I am a full stack developer with a
                     passion for TypeScript, React, and Node/Express.
                 </span>
