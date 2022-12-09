@@ -255,7 +255,8 @@ i {
     justify-items: center;
 }
 .project-img {
-    height: 350px;
+    height: auto;
+    width: 80%;
 }
 .project-desc {
     grid-row: 2/3;
