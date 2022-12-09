@@ -190,10 +190,11 @@ h2 {
     text-align: center;
 }
 #tech-stack {
+    justify-self: center;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, 100px);
-    grid-template-rows: repeat(auto-fit, 100px);
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
 }
 #tech-stack > div {
     display: grid;
@@ -333,11 +334,26 @@ i {
 /* Removing margin for mobile devices */
 @media (min-width: 0px) and (max-width: 770px) {
     #project-page {margin-left: 0px}
+    #tech-stack {
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(4, 100px);
+    }
+    #about-page {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 8px;
+    }
+}
+@media (min-width: 770px) and (max-width: 8000px) {
+    #intro1 {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
 }
 /* All general media queries */
 @media (min-width: 0px) and (max-width: 440px) {
     .project-title {font-size: 1.0em}
-    .project-desc, #intro1  {font-size: 0.6em}
+    .project-desc, #intro1  {font-size: 0.8em}
     .project-img {}
     .img-container {width: 100%}
     .projects {height: 190px}
@@ -345,7 +361,7 @@ i {
 }
 @media (min-width: 440px) and (max-width: 560px) {
     .project-title {font-size: 1.1em}
-    .project-desc, #intro1  {font-size: 0.7em}
+    .project-desc, #intro1  {font-size: 0.8em}
     .project-img {}
     .img-container {width: 100%}
     .projects {height: 256px}
@@ -353,7 +369,7 @@ i {
 }
 @media (min-width: 560px) and (max-width: 616px) {
     .project-title {font-size: 1.1em}
-    .project-desc, #intro1  {font-size: 0.7em}
+    .project-desc, #intro1  {font-size: 0.8em}
     .project-img {}
     .img-container {width: 100%}
     .projects {height: 306px}

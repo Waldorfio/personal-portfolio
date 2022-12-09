@@ -12,7 +12,7 @@ function TechStack() {
             <div><i className="devicon-python-plain colored"></i><span>Python</span></div>
             <div><i className="devicon-jest-plain colored"></i><span>Jest</span></div>
             <div><i className="devicon-git-plain colored"></i><span>Git</span></div>
-            <div><i className="devicon-webpack-plain colored"></i><span>Webpack</span></div>
+            {/* <div><i className="devicon-webpack-plain colored"></i><span>Webpack</span></div> */}
             <div><i className="devicon-npm-original-wordmark colored"></i><span>npm</span></div>
         </div>
   );
