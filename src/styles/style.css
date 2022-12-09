@@ -145,11 +145,14 @@ h1 {
     grid-template-columns: 1fr repeat(4, 100px);
     justify-items: center;
     justify-content: end;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 59px;
     margin: 0;
     background-color: var(--navBar);
     position: sticky;
     top: 0;
+    align-items: center;
 }
 .nav-links {
     font-weight: 900;
@@ -341,38 +344,55 @@ i {
 
 
 
+
+
+
+
+@media (min-width: 700px) and (max-width: 770px) {
+    .project-title {font-size: 1.2em}
+    .project-desc {font-size: 0.8em}
+    .project-img {}
+    .img-container {width: 100%}
+    .projects {height: 378px}
+    #project-page {gap: 80px}
+}
 @media (min-width: 770px) and (max-width: 900px) {
     .project-title {font-size: 1.4em}
     .project-desc {font-size: 0.9em}
     .project-img {}
+    .img-container {width: 100%}
     .projects {height: 432px}
-    #project-page {gap: 120px}
+    #project-page {gap: 100px}
 }
 @media (min-width: 900px) and (max-width: 972px) {
     .project-title {font-size: 1.7em}
     .project-desc {font-size: 0.9em}
     .project-img {}
+    .img-container {width: 110%}
     .projects {height: 464px}
-    #project-page {gap: 120px}
+    #project-page {gap: 100px}
 }
 @media (min-width: 972px) and (max-width: 1100px) {
     .project-title {font-size: 1.7em}
     .project-desc {font-size: 0.9em}
     .project-img {}
+    .img-container {width: 120%}
     .projects {height: 512px}
-    #project-page {gap: 120px}
+    #project-page {gap: 100px}
 }
 @media (min-width: 1100px) and (max-width: 1200px) {
     .project-title {font-size: 1.7em}
     .project-desc {font-size: 0.9em}
     .project-img {}
+    .img-container {width: 120%}
     .projects {height: 560px}
-    #project-page {gap: 120px}
+    #project-page {gap: 100px}
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
     .project-title {font-size: 2em}
     .project-desc {font-size: 1em}
     .project-img {}
+    .img-container {width: 130%}
     .projects {height: 641px}
     #project-page {gap: 120px}
 }
@@ -398,5 +418,49 @@ i {
         gap: 140px;
         margin-left: 220px;
         margin-right: 220px
+    }
+}
+
+
+/* Navbar specific queries */
+@media (min-width: 0px) and (max-width: 370px) {
+    #nav-bar {
+        font-size: 0.7em;
+        height: 32px;
+        grid-template-columns: 1fr repeat(4, 50px);
+    }
+}
+@media (min-width: 370px) and (max-width: 615px) {
+    #nav-bar {
+        font-size: 0.8em;
+        height: 38px;
+        grid-template-columns: 1fr repeat(4, 70px);
+    }
+}
+@media (min-width: 615px) and (max-width: 770px) {
+    #nav-bar {
+        font-size: 0.9em;
+        height: 41px;
+        grid-template-columns: 1fr repeat(4, 80px);
+    }
+}
+@media (min-width: 770px) and (max-width: 1200px) {
+    #nav-bar {
+        font-size: 1em;
+        height: 47px;
+        grid-template-columns: 1fr repeat(4, 90px);
+    }
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+    #nav-bar {
+        font-size: 1.1em;
+        height: 54px;
+    }
+}
+@media (min-width: 1500px) and (max-width: 8000px) {
+    #nav-bar {
+        font-size: 1.2em;
+        height: 59px;
+        grid-template-columns: 1fr repeat(4, 120px);
     }
 }
