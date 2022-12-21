@@ -190,6 +190,9 @@ h2 {
 #about-info {
     display: grid;
     text-align: center;
+    width: 350px;
+    align-self: center;
+    justify-self: center;
 }
 #tech-stack {
     justify-self: center;
@@ -361,7 +364,7 @@ i {
     }
     #nav-bar {grid-template-columns: 1fr repeat(4, 50px)}
     #project-page {gap: 60px}
-    .projects {height: 190px}
+    .projects {height: 190px; padding-bottom: 170px;}
     .project-title {font-size: 1.0em}
     .project-desc, #intro1  {font-size: 0.8em}
     .img-container {width: 100%}
@@ -375,7 +378,7 @@ i {
     }
     #nav-bar {grid-template-columns: 1fr repeat(4, 70px)}
     #project-page {gap: 70px}
-    .projects {height: 280px}
+    .projects {height: 280px; padding-bottom: 80px;}
     .project-title {font-size: 1.1em}
     .project-desc, #intro1  {font-size: 0.8em}
     .img-container {width: 100%}
