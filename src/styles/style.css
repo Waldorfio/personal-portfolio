@@ -337,6 +337,7 @@ i {
 /*---- MEDIA QUERIES ----*/
 /* Removing margin for mobile devices */
 @media (min-width: 0px) and (max-width: 770px) {
+    #about-info {width: 340px}
     #project-page {margin-left: 0px}
     #tech-stack {
         grid-template-columns: repeat(3, 100px);
@@ -349,6 +350,7 @@ i {
     }
 }
 @media (min-width: 770px) and (max-width: 8000px) {
+    #about-info {width: 500px}
     #intro1 {
         /* margin-left: 25%;
         margin-right: 25%; */
