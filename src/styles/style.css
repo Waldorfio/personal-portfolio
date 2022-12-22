@@ -331,8 +331,8 @@ i {
     padding-right: 5px; */
 }
 #github-logo:hover {transform: scale(1.4); color: purple}
-#linked-logo:hover {transform: scale(1.4): color: #0072b1}
-#mail-logo:hover {transform: scale(1.4): color: orange}
+#linked-logo:hover {transform: scale(1.4); color: #0072b1}
+#mail-logo:hover {transform: scale(1.4); color: orange}
 
 /* FOOTER */
 #footer {
