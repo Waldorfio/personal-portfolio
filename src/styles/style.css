@@ -312,7 +312,29 @@ i {
 /* CONTACTS PAGE */
 #contact-page {
     display: grid;
+    grid-template-rows: 1fr 1fr;
 }
+#logos {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+#logos > a {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    color: rgb(0, 0, 0);
+    transition: transform 1.07s;
+/*     width: 1.0em;
+    padding-left: 5px;
+    padding-right: 5px; */
+}
+#github-logo:hover {transform: scale(1.4); color: purple}
+#linked-logo:hover {transform: scale(1.4): color: #0072b1}
+#mail-logo:hover {transform: scale(1.4): color: orange}
 
 /* FOOTER */
 #footer {
@@ -324,14 +346,6 @@ i {
     text-align: center;
     align-content: center;
 }
-#github-logo, #linked-logo {
-    width: 1.0em;
-    padding-left: 5px;
-    padding-right: 5px;
-    transition: transform 1.07s;
-}
-#github-logo:hover {transform: rotate(360deg) scale(2)}
-#linked-logo:hover {color: #0072b1}
 
 
 
