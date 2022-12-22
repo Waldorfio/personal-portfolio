@@ -172,8 +172,6 @@ h1 {
 
 /* ALL PAGES */
 #about-page, #project-page, #contact-page {
-    font-weight: 900;
-    line-height: 1.5em;
     margin: 0 71.5px 0 71.5px;
     padding: 15px;
 }
@@ -354,6 +352,7 @@ i {
 /*---- MEDIA QUERIES ----*/
 /* Removing margin for mobile devices */
 @media (min-width: 0px) and (max-width: 770px) {
+    #about-page, #contact-page, #project-page {font-weight: 100; line-height: 1.2em}
     #about-info {width: 340px}
     #project-page {margin-left: 0px}
     #tech-stack {
@@ -367,6 +366,7 @@ i {
     }
 }
 @media (min-width: 770px) and (max-width: 8000px) {
+    #project-page {font-weight: 500; line-height: 1.5em}
     #about-info {width: 500px}
     #intro1 {
         /* margin-left: 25%;
