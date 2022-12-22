@@ -87,6 +87,7 @@ h1 {
     align-self: end;
 }
 #view-work { /* View my work button */
+    cursor: pointer;
     border: 2px solid;
     border-radius: 2px;
     padding: 5px 20px 5px 20px;
@@ -118,6 +119,7 @@ h1 {
     opacity: 0;
 }
 .switch {
+    cursor: pointer;
     display: inline-block;
     font-size: 20px;
     height: 1em;
@@ -157,6 +159,7 @@ h1 {
     align-items: center;
 }
 .nav-links {
+    cursor: pointer;
     font-weight: 900;
     transition: color 0.3s;
 }
