@@ -121,11 +121,17 @@ function App() {
             <h2>About</h2>
             <div id="about-info">
                 <span id="intro1">
-                    Coming from a background of mechanical engineering, I
-                    I was immediately enthralled by the satisfaction in creating new
-                    products and experiences in a satisfyingly tangible manner.
-                    I am committed to the idea of life-long learning, I am a full stack developer with a
-                    passion for TypeScript, React, and Node/Express.
+                  I'm an entry-level developer looking to land my first 
+                  development job. Being a former mechanical engineer 
+                  with experience in a consulting environment, I have 
+                  many transferable skills.
+                  
+                  Coming into tech I was immediately enthralled by the 
+                  satisfaction of creating new products and experiences 
+                  in a satisfyingly tangible manner.
+                  
+                  My main tech stack is the MERN stack, and I am committed 
+                  to the idea of life-long learning and furthering my knowledge.
                 </span>
             </div>
             < TechStack />
