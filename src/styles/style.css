@@ -319,7 +319,7 @@ i {
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: 100px;
 }
-#logos > div {
+#logos > a {
     display: grid;
     grid-template-rows: 1.2fr 0.4fr;
     gap: 10px;
@@ -339,7 +339,7 @@ i {
 
     transition: background-color 0.2s;
 }
-#logos > div:hover {
+#logos > a:hover {
     background-color: white;
     color: black;
     font-weight: bolder;
