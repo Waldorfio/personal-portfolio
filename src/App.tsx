@@ -190,9 +190,9 @@ function App() {
         <div id='contact-page' ref={contactRef}>
           <h2>Let's Get in Touch!</h2>
           <div id='logos'>
-            <a href="https://www.github.com/waldorfio" id='github-logo' className="fa fa-github-square"></a>
-            <a href="https://www.linkedin.com/in/wally-h/" id='linked-logo' className="fa fa-linkedin-square"></a>
-            <a href="walid.hanifi707@gmail.com" id='mail-logo' className="fa fa-envelope-o"></a>
+            <a href="https://www.github.com/waldorfio"><i className="devicon-github-plain"></i><span>GitHub</span></a>
+            <a href="https://www.linkedin.com/in/wally-h/"><i className="devicon-linkedin-plain colored"></i><span>LinkedIn</span></a>
+            <a href="walid.hanifi707@gmail.com"><i className="devicon-google-plain"></i><span>Email</span></a>
           </div>
         </div>
   
