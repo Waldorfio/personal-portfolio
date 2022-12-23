@@ -311,6 +311,8 @@ i {
 #contact-page {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding-bottom: 60px;
 }
 #logos {
     justify-self: center;
