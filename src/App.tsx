@@ -153,38 +153,6 @@ function App() {
             />
           ))}
 
-          {/* <div className="projects">
-            <div className='project-title'>SPA E-Commerce site built using React</div>
-            <div className="project-imgs"></div>
-            <div className="project-desc">
-                <p className="para1">
-                    Shopping cart is a fully responsive, single-page application 
-                    built using React, TypeScript, and styled using vanilla CSS.
-                    The goal here was to showcase routing in React, whilst further 
-                    refining my CSS skills. 
-                </p>
-                <p className="para2">
-                    I struggled with a few things whislt building this app. Firstly, 
-                    maintaining strict typing with TypeScript was  something new 
-                    to me here, so took some time to get comfortable with.
-                    <br></br>
-                    Next, another practice that I had struggled with was the passing 
-                    of states via Outlet routes in TypeScript. Thankfully, the 
-                    problem was solved by maintaining strict typing across the app, 
-                    specifically with props that were passed through components.
-                    <br></br>
-                    The goal was to also advance my CSS skills further, and so I 
-                    practiced creating components animated such as the sliding cart 
-                    as well as the smooth responsive scaling across devices.
-                </p>
-                <p className="para3">
-                    Built using React, Typescript and CSS
-                </p>
-                <div className="project-btn">Live App</div>
-                <div className="project-btn">GitHub Repo</div>
-            </div>
-          </div> */}
-
         </div>
 
         <div id='contact-page' ref={contactRef}>
@@ -192,7 +160,7 @@ function App() {
           <div id='logos'>
             <a href="https://www.github.com/waldorfio"><i className="devicon-github-plain"></i><span>GitHub</span></a>
             <a href="https://www.linkedin.com/in/wally-h/"><i className="devicon-linkedin-plain colored"></i><span>LinkedIn</span></a>
-            <a href="walid.hanifi707@gmail.com"><i className="devicon-google-plain"></i><span>Email</span></a>
+            <a href="mailto:walid.hanifi707@gmail.com"><i className="devicon-google-plain"></i><span>Email</span></a>
           </div>
         </div>
   
