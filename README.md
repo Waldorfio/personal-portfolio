@@ -1,5 +1,5 @@
 My fully responsive personal portfolio, built using React, TypeScript and vanilla CSS.
-## [whanifi.dev 👈](https://www.whanifi.dev)
+## [whanifi.dev 👈](https://whanifi.dev/)
 
 ### Features
 - A showcase of my personal projects
@@ -11,8 +11,8 @@ My fully responsive personal portfolio, built using React, TypeScript and vanill
 ![](screencap1.png)
 
 ### Goals
-- Showcase advanced CSS skills
 - Showcase projects using a SPA in React and TypeScript
+- Showcase advanced CSS skills
 
 ### Challenges Faced
 - Optimising advanced CSS animations
