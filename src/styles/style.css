@@ -8,7 +8,7 @@ body,html {
     margin: 0;
     padding: 0;
 }
-a:-webkit-any-link {    /* Removes default styling for links, and React Links */
+a {    /* Removes default styling for links, and React Links */
     text-decoration: none;
     color: inherit;
 }
