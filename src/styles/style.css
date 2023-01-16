@@ -86,20 +86,15 @@ h1 {
     font-weight: 300;
     align-self: end;
 }
-#intro-line1 {
+#intro-line1, #intro-line2, #view-work {
     display: inline-block;
     /* animation properties */
     animation-duration: 1s;
     animation-name: slide-right;
     animation-iteration-count: 1;
 }
-#intro-line2 {
-    display: inline-block;
-    /* animation properties */
-    animation-duration: 1s;
-    animation-name: slide-left;
-    animation-iteration-count: 1;
-}
+#intro-line1 {animation-name: slide-right}
+#intro-line2 {animation-name: slide-left}
 @keyframes slide-right {
     0% {
         opacity: 10%;
@@ -136,11 +131,7 @@ h1 {
     border-radius: 2px;
     padding: 5px 20px 5px 20px;
     align-self: start;
-    display: inline-block;
-    /* animation properties */
-    animation-duration: 1s;
     animation-name: slide-down;
-    animation-iteration-count: 1;
 }
 #view-work:hover {
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
