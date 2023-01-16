@@ -86,12 +86,61 @@ h1 {
     font-weight: 300;
     align-self: end;
 }
+#intro-line1 {
+    display: inline-block;
+    /* animation properties */
+    animation-duration: 1s;
+    animation-name: slide-right;
+    animation-iteration-count: 1;
+}
+#intro-line2 {
+    display: inline-block;
+    /* animation properties */
+    animation-duration: 1s;
+    animation-name: slide-left;
+    animation-iteration-count: 1;
+}
+@keyframes slide-right {
+    0% {
+        opacity: 10%;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+@keyframes slide-left {
+    0% {
+        opacity: 10%;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+@keyframes slide-down {
+    0% {
+        opacity: 10%;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
 #view-work { /* View my work button */
     cursor: pointer;
     border: 2px solid;
     border-radius: 2px;
     padding: 5px 20px 5px 20px;
     align-self: start;
+    display: inline-block;
+    /* animation properties */
+    animation-duration: 1s;
+    animation-name: slide-down;
+    animation-iteration-count: 1;
 }
 #view-work:hover {
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);

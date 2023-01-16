@@ -98,8 +98,8 @@ function App() {
   
   
           <h1>
-            Hello, I'm <span className='name'>Wally</span><br></br>
-            I'm a full stack web developer.
+            <span id='intro-line1'>Hello, I'm <span className='name'>Wally</span></span>
+            <br></br><span id='intro-line2'>I'm a full stack web developer.</span>
           </h1>
           <div id='view-work' className='name' onClick={scrollAbout}>
             View my work
