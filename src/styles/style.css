@@ -3,6 +3,7 @@
 * {
     font-family: montserrat, sans-serif;
     user-select: none;   /* Disables text highlighting. Individually removed later for to-do items */
+    text-rendering: optimizeLegibility; /* For safari */
 }
 body,html {
     margin: 0;
@@ -91,6 +92,10 @@ h1 {
     /* animation properties */
     animation-duration: 1.5s;
     animation-iteration-count: 1;
+
+    -webkit-animation-duration: 0.9s;
+    -ms-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
 }
 #intro-line1 {animation-name: slide-right}
 #intro-line2 {animation-name: slide-left}
@@ -400,6 +405,9 @@ i {
         margin-left: 0px;
         margin-right: 0px;
         padding: 8px;
+    }
+    #about-page > h2 {
+        padding-top: 20px;
     }
 }
 @media (min-width: 770px) and (max-width: 8000px) {
