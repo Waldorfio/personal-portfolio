@@ -18,7 +18,7 @@ a {    /* Removes default styling for links, and React Links */
     --text: white;
     --bgColor1: #1a1a1a;
     --bgColor2: #282828;
-    --navBar: #262626;
+    --navBar: #202020;
 }
 
 body {
