@@ -93,6 +93,9 @@ h1 {
     animation-duration: 1.5s;
     animation-iteration-count: 1;
 
+    animation-timing-function: cubic-bezier();
+    -webkit-animation-timing-function: cubic-bezier();
+
     -webkit-animation-duration: 0.9s;
     -ms-animation-duration: 1.5s;
     -moz-animation-duration: 1.5s;
