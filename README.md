@@ -1,39 +1,22 @@
-My fully responsive personal portfolio, built using React, TypeScript and vanilla CSS.
+# Personal Portfolio
+
+My fully responsive personal portfolio website, showcasing my skills and experience as a full-stack web developer.
 ## [whanifi.dev 👈](https://whanifi.dev/)
 
 ### Features
-- A showcase of my personal projects
-- Smooth and responsive design
-- Dark/light mode switch
-- Animated project gifs
-- Animated tech stack icons
+- Fully responsive design for optimal user experience on all devices
+- Dark mode switch
+- Concise, and visually appealing design
 
-![](screencap1.png)
-
-### Goals
+#### Goals
 - Showcase projects using a SPA in React and TypeScript
 - Showcase advanced CSS skills
+- Provide a way for potential employers and clients to reach out to me easily
 
-### Challenges Faced
-- Optimising advanced CSS animations
+#### Challenges Faced
+- Creating a website that effectively showcases my skills and experience and my previous engineering background was a challenge as it required me to find a way to effectively communicate my unique story and skillset.
+- Designing a portfolio that effectively showcases my past projects while still being easy to navigate and understand was a challenge.
+- Finding the right balance between showcasing my skills and my story and keeping the website visually appealing and user-friendly was a challenge.
 
-## How to run the app
-### 1. Click the [hosted link](https://www.whanifi.dev)
-
-OR
-
-### 2. Host it locally
-1.	Either fork or download the app and open the folder in the cli
-2.	Install all dependencies using the `npm i` command
-3.	Start the web server using the `npm run local` command. The app will be served at http://localhost:8080/
-4.	Go to  http://localhost:8080/ in your browser, and start the app!
-
-## How to use the app
-1. Scroll through the SPA and view my portfolio!
-
-## Future Features
-- Fix 'any' typing in TypeScript
-
-## Dependencies
-- React
-- TypeScript
+## Technologies Used
+- React/TypeScript and CSS for a smooth front-end
