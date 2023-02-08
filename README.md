@@ -3,6 +3,8 @@
 My fully responsive personal portfolio website, showcasing my skills and experience as a full-stack web developer.
 ## [whanifi.dev 👈](https://whanifi.dev/)
 
+![](animation5.gif)
+
 ### Features
 - Fully responsive design for optimal user experience on all devices
 - Dark mode switch
