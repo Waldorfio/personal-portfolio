@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 * {
     font-family: montserrat, sans-serif;
@@ -13,7 +12,10 @@ a {    /* Removes default styling for links, and React Links */
     text-decoration: none;
     color: inherit;
 }
-/*-----------------*/
+/*–––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* VARIABLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root { /* Defining dark mode variables */
     --text: white;
     --bgColor1: #1a1a1a;
@@ -29,7 +31,8 @@ html { /* For smooth scrolling to sections */
     scroll-behavior: smooth;
 }
 
-/* BACKGROUND ANIMATION */
+/* BACKGROUND ANIMATION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .bg {
     animation: slide 3s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, var(--bgColor1) 50%, var(--bgColor2) 50%);
@@ -69,7 +72,8 @@ html { /* For smooth scrolling to sections */
     }
 }
 
-/* LANDING PAGE */
+/* LANDING PAGE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 #landing-page {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -149,7 +153,8 @@ h1 {
 	}
 }
 
-/* SWITCH */
+/* SWITCH
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .switch input {
     position: absolute;
     opacity: 0;
@@ -177,7 +182,9 @@ h1 {
 .switch input:checked + #nav-bar {
     color: red;
 }
-/* NAV BAR */
+
+/* NAVBAR
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 #nav-bar {
     z-index: 1;
     list-style-type: none; /* Disable ul dots */
@@ -206,7 +213,8 @@ h1 {
     justify-self: start;
 }
 
-/* ALL PAGES */
+/* ALL PAGES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 #about-page, #project-page, #contact-page {
     margin: 0 71.5px 0 71.5px;
     padding: 15px;
@@ -262,11 +270,10 @@ h2 {
     color: black;
     font-weight: bolder;
 }
-i {
-    font-size: 50px; /* Size of devicon icons */
-}
+i {font-size: 50px} /* Size of devicon icons */
 
-/* PROJECTS PAGE */
+/* PROJECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 #project-page {
     display: grid;
     gap: 80px;
@@ -303,6 +310,7 @@ i {
     z-index: -1;
     height: auto;
     width: 80%;
+    opacity: 80%;
 }
 .project-desc {
     grid-row: 2/3;
@@ -343,7 +351,8 @@ i {
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
 
-/* CONTACTS PAGE */
+/* CONTACTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 #contact-page {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -383,7 +392,8 @@ i {
     font-weight: bolder;
 }
 
-/* FOOTER */
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 #footer {
     display: grid;
     background-color: #0ebf83;
@@ -394,9 +404,9 @@ i {
     align-content: center;
 }
 
-/*---- MEDIA QUERIES ----*/
-/* Removing margin for mobile devices */
-@media (min-width: 0px) and (max-width: 770px) {
+/* MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 0px) and (max-width: 770px) { /* Removing margin for mobile devices */
     #about-page, #contact-page, #project-page {font-weight: 100; line-height: 1.2em}
     #about-info {width: 340px}
     #project-page {margin-left: 0px}
@@ -416,10 +426,6 @@ i {
 @media (min-width: 770px) and (max-width: 8000px) {
     #project-page {font-weight: 500; line-height: 1.5em}
     #about-info {width: 500px}
-    #intro1 {
-        /* margin-left: 25%;
-        margin-right: 25%; */
-    }
 }
 
 /* All general media queries */
@@ -435,7 +441,6 @@ i {
     .project-title {font-size: 1.0em}
     .project-desc, #intro1  {font-size: 0.8em}
     .img-container {width: 100%}
-    .project-img {}
 }
 @media (min-width: 370px) and (max-width: 615px) {
     #landing-page {font-size: 1.1em}
@@ -449,7 +454,6 @@ i {
     .project-title {font-size: 1.1em}
     .project-desc, #intro1  {font-size: 0.8em}
     .img-container {width: 100%}
-    .project-img {}
 }
 @media (min-width: 615px) and (max-width: 770px) {
     #landing-page {font-size: 1.2em}
@@ -463,7 +467,6 @@ i {
     .project-title {font-size: 1.2em}
     .project-desc, #intro1  {font-size: 0.8em}
     .img-container {width: 100%}
-    .project-img {}
 }
 @media (min-width: 770px) and (max-width: 1500px) {
     #landing-page {font-size: 1.6em}
@@ -477,7 +480,6 @@ i {
     .project-title {font-size: 1.7em}
     .project-desc, #intro1  {font-size: 0.9em}
     .img-container {width: 100%}
-    .project-img {}
 }
 @media (min-width: 1500px) and (max-width: 8000px) {
     #landing-page {font-size: 1.9em}
@@ -494,6 +496,6 @@ i {
     .projects {height: 700px}
     .project-title {font-size: 2.2em}
     .project-desc, #intro1  {font-size: 1.15em}
+    .project-desc {max-width: 600px}
     .img-container {width: 140%}
-    .project-img {}
 }
