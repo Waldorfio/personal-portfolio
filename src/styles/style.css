@@ -498,4 +498,8 @@ i {font-size: 50px} /* Size of devicon icons */
     .project-desc, #intro1  {font-size: 1.15em}
     .project-desc {max-width: 600px}
     .img-container {width: 140%}
+    .project-img { 
+        max-width: 940px;
+        max-height: auto;
+    }
 }
