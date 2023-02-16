@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 * {
     font-family: montserrat, sans-serif;
-    user-select: none;   /* Disables text highlighting. Individually removed later for to-do items */
     text-rendering: optimizeLegibility; /* For safari */
 }
 body,html {
@@ -75,6 +74,7 @@ html { /* For smooth scrolling to sections */
 /* LANDING PAGE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #landing-page {
+    user-select: none;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
@@ -221,6 +221,7 @@ h1 {
 }
 #about-page, #project-page, #contact-page {padding-top: 50px} /* Fixes scroll positioning */
 h2 {
+    user-select: none;
     font-size: 2rem;
     align-self: center;
     justify-self: center;
@@ -240,6 +241,7 @@ h2 {
     justify-self: center;
 }
 #tech-stack {
+    user-select: none;
     justify-self: center;
     display: grid;
     gap: 20px;
@@ -288,6 +290,7 @@ i {font-size: 50px} /* Size of devicon icons */
     grid-template-columns: repeat(2, 1fr);
 }
 .project-title {
+    user-select: none;
     grid-row: 1/2;
     grid-column: 1/2;
     align-self: center;
